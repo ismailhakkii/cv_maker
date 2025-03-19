@@ -101,7 +101,7 @@ extension BuildContextExtension on BuildContext {
 // List uzantıları
 extension ListExtension<T> on List<T> {
   // Listenin boş olup olmadığını kontrol etme
-  bool get isNotNullOrEmpty => this != null && this.isNotEmpty;
+  bool get isNotNullOrEmpty => this.isNotEmpty;
   
   // Listeyi gruplandırma
   Map<K, List<T>> groupBy<K>(K Function(T) keyFunction) {

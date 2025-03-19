@@ -30,8 +30,12 @@ class MyApp extends StatelessWidget {
         ChangeNotifierProvider(create: (_) => SkillsViewModel()),
       ],
       child: MaterialApp(
+        debugShowCheckedModeBanner: false,
         title: AppStrings.appName,
-        theme: AppTheme.lightTheme,
+        theme: ThemeData(
+          primarySwatch: Colors.blue,
+          visualDensity: VisualDensity.adaptivePlatformDensity,
+        ),
         initialRoute: AppRoutes.welcome,
         routes: {
           AppRoutes.welcome: (context) => WelcomeScreen(),

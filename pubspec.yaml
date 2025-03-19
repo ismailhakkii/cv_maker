@@ -12,8 +12,10 @@ dependencies:
     sdk: flutter
   
   # UI bileşenleri
-  cupertino_icons: ^1.0.5
   webview_flutter: ^4.2.2
+  webview_flutter_android: ^3.6.2
+  webview_flutter_wkwebview: ^3.4.4
+  cupertino_icons: ^1.0.5
   flutter_native_splash: ^2.3.1
   
   # Durum yönetimi
